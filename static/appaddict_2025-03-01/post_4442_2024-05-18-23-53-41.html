@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Two Recommendations for Syncing Utilities</title>
+  <meta name="description" content="When it comes to file syncing utilities, people have wildly varying needs. They may have a USB drive with a set of files they need for work but want to keep a canonical copy of...">
+  <style>
+    header{
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <header>
+      <h1>Two Recommendations for Syncing Utilities</h1>
+      <time datetime="2024-05-19T08:00:00Z">May 19, 2024 — 08:00</time>
+    </header>
+    
+    <section>
+      <p><action-text-attachment sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTh5TkRRNU5UOWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--f93399916bd6ed2274ca86a56cc001900560566a" content-type="image/png" url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcTlmIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9768868c840f0d9b731833f6c87bdf047d4c22bc/FreeFileSync_Icon.png" filename="FreeFileSync_Icon.png" filesize="34086" width="256" height="256" previewable="true" presentation="gallery" caption="Free File Sync">
+<figure class="attachment attachment--preview flex-col justify-center attachment--png">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBcTlmIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9768868c840f0d9b731833f6c87bdf047d4c22bc/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUVHa0NBQXc2Q25OaGRtVnlld2M2Q25OMGNtbHdWRG9NY1hWaGJHbDBlV2xrIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a18847b6c1cccf2736612f487841b9c550593dc1/FreeFileSync_Icon.png 2x" loading="lazy" alt="Free File Sync" src="assets/{:filename=&gt;&quot;FreeFileSync_Icon.png&quot;,%20:new_path=&gt;&quot;images/FreeFileSync_Icon.png&quot;,%20:content_type=&gt;&quot;image/png&quot;,%20:byte_size=&gt;34086,%20:checksum=&gt;&quot;ZGtcTPb6rBx7Tb9EREXMOA==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      Free File Sync
+    </figcaption>
+</figure></action-text-attachment></p>
+
+<p>When it comes to file syncing utilities, people have wildly varying
+needs. They may have a USB drive with a set of files they need for work
+but want to keep a canonical copy of the same files at home. Perhaps
+they like to have a full disk clone as a backup or, like me, a regular
+copy of an Obsidian vault copied to a cloud service.</p>
+
+<p>If you are a master at the terminal, you might be able to make <a
+href="https://en.wikipedia.org/wiki/Rsync">rsync</a> do everything you
+want, since most file syncing utilities are GUIs for rsync with a few
+bells and whistles thrown in, but if you are a mere mortal, you probably
+want to opt for an app.</p>
+
+<p><a href="https://freefilesync.org/">Free File Sync</a> is an excellent
+choice. It&#39;s backwards compatible on Macs all the way back to OS X 10.10
+Yosemite. It&#39;s free, open source and cross-platform with Windows and
+Linux. I use it on a Mac (in conjunction with <a
+href="https://iboysoft.com/ntfs-for-mac/">NTFS for Mac</a>) to sync
+files between a USB drive and a directory an external NTFS SSD. The
+default settings work for many use cases and it&#39;s a breeze to create and
+save sync jobs.</p>
+
+<p>The other app I recommend, <a
+href="https://www.greenworldsoft.com/sync-folders-pro-help.php">Sync
+Folders Pro</a>, is $8.99 in the <a
+href="https://apps.apple.com/us/app/sync-folders-pro/id522706442">App
+Store</a>. It has two features that Free File Sync doesn&#39;t have
+including a set it and forget it scheduler. I have a <a
+href="https://www.keyboardmaestro.com/main/">Keyboard Maestro</a> macro
+that launches Sync Folders Pro every day at 1:59am and closes it five
+minutes later. In the interim, a scheduled sync of my Obsidian vault
+occurs with a folder on my Google Drive. If you purchase Sync Folders
+Pro from the App Store, you can download the Plus edition from the
+developers web site at no added charge. This edition gives you the
+ability to make full disk clones.</p>
+
+<p><strong>Key Features</strong></p>
+
+<ul>
+<li>Supports Macs, iPad, iPhone, iPod.</li>
+<li>
+<a href="https://www.greenworldsoft.com/sync-folders-pro-plus-help.php">Bootable backup</a> on an external drive (SSD, HDD)</li>
+<li>Bidirectional synchronization, one-way synchronization, mirroring backup.</li>
+<li>Powerful preview mode. Ability change file operations before sync. "Line by Line" comparison.</li>
+<li>Automatic scheduled synchronization.</li>
+<li>Synchronization any number of pair folders at same time.</li>
+<li>Auto-updating help in the app. Periodically adding answers to frequently asked questions.</li>
+</ul>
+
+<p>Other top choices in the sync and backup field that I&#39;ve tried and can
+recommend are <a href="https://bombich.com/">Carbon Copy Cloner</a> and
+<a
+href="https://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html">Super
+Duper</a>.<br /><action-text-attachment
+sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTh5TkRRNU5qOWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--0e4ab9aa8ebce88ea846aa0baed86195e3c133b4"
+content-type="image/png"
+url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckJmIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--118c8e32553ce09a55d3bc812ffdcd25c57773ed/sync_folders_pro-icon_512x512.png"
+filename="sync_folders_pro-icon_512x512.png" filesize="154930"
+width="512" height="512" previewable="true" presentation="gallery"
+caption="Sync Folders Pro" /></p>
+
+<figure class="attachment attachment--preview flex-col justify-center attachment--png">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBckJmIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--118c8e32553ce09a55d3bc812ffdcd25c57773ed/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUVHa0NBQXc2Q25OaGRtVnlld2M2Q25OMGNtbHdWRG9NY1hWaGJHbDBlV2xrIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a18847b6c1cccf2736612f487841b9c550593dc1/sync_folders_pro-icon_512x512.png 2x" loading="lazy" alt="Sync Folders Pro" src="assets/{:filename=&gt;&quot;FreeFileSync_Icon.png&quot;,%20:new_path=&gt;&quot;images/FreeFileSync_Icon.png&quot;,%20:content_type=&gt;&quot;image/png&quot;,%20:byte_size=&gt;34086,%20:checksum=&gt;&quot;ZGtcTPb6rBx7Tb9EREXMOA==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      Sync Folders Pro
+    </figcaption>
+</figure>
+
+<p></action-text-attachment></p>
+
+    </section>
+  </article>
+
+</body>
+</html>

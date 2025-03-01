@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How to Get a Word Count for Any Folder in Your Obsidian Vault</title>
+  <meta name="description" content="A Python script that will count the words in a folder of markdown files. #Obsidian #ObsidianMD #PKM
+
+I use Obsidian to write a minimum of three blog posts every day as well as technical documents...">
+  <style>
+    header{
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <header>
+      <h1>How to Get a Word Count for Any Folder in Your Obsidian Vault</h1>
+      <time datetime="2025-01-22T01:20:47Z">January 22, 2025 — 01:20</time>
+    </header>
+    
+    <section>
+      <p><action-text-attachment sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTgxT1RNNE5qOWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--f1004f7632af91b830dce4920ade2cca50e837fb" content-type="image/jpeg" url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdnJuIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aaa6e803352eeb13a86c6cb7d059782a867988c7/opt-2025-01-21--1_19.jpeg" filename="opt-2025-01-21--1_19.jpeg" filesize="31085" width="1000" height="450" previewable="true" presentation="gallery" caption="Word Count">
+<figure class="attachment attachment--preview flex-col justify-center attachment--jpeg">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdnJuIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--aaa6e803352eeb13a86c6cb7d059782a867988c7/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hSeVpYTnBlbVZmZEc5ZmJHbHRhWFJiQjJrQ0FCQnBBZ0FNT2dwellYWmxjbnNIT2dwemRISnBjRlE2REhGMVlXeHBkSGxwWkE9PSIsImV4cCI6bnVsbCwicHVyIjoidmFyaWF0aW9uIn19--a744d8f75451afbcf118ec59ae617394a12029aa/opt-2025-01-21--1_19.jpeg 2x" loading="lazy" alt="Word Count" src="assets/{:filename=&gt;&quot;opt-2025-01-21--1_19.jpeg&quot;,%20:new_path=&gt;&quot;images/opt-2025-01-21--1_19.jpeg&quot;,%20:content_type=&gt;&quot;image/jpeg&quot;,%20:byte_size=&gt;31085,%20:checksum=&gt;&quot;0Zb2sn22fjt6E5muKqBMyQ==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      Word Count
+    </figcaption>
+</figure></action-text-attachment></p>
+
+<p><strong>A Python script that will count the words in a folder of
+markdown files. #Obsidian #ObsidianMD #PKM</strong></p>
+
+<p>I use Obsidian to write a minimum of three blog posts every day as well
+as technical documents for my job.  Of course, I also compose and edit
+notes in it too. At the end of 2024, I was curious to see how many words
+I&#39;d written on each blog during the year. Unfortunately, I could not
+find a plugin that could do this, but I suspected that Python probably
+could. After working on it for a while with the help of Google Gemini, I
+had an easy to run script that would work on any folder in my vault.  If
+you have any Python experience, you won&#39;t find this difficult at all to
+use. The only edit you need to make is for the path of the folder you
+want to evaluate. Just save this in a text editor like BBEdit with a .py
+extension. Change the permissions on it using chmod and it will be ready
+to run.</p>
+
+<pre>chmod +x pythonScript.py </pre>
+
+<p>NOTE: A kind person on Reddit pointed me toward a plugin that has this
+functionality if you&#39;d rather go that route. It is called <a
+href="https://github.com/isaaclyman/novel-word-count-obsidian">Novel
+Word Count.</a></p>
+
+<h2>The Script</h2>
+
+<pre>\#!/usr/bin/env python3
+import os
+
+def count_words_in_markdown(filepath):
+  """Counts the number of words in a markdown file.
+
+  Args:
+    filepath: Path to the markdown file.
+
+  Returns:
+    The number of words in the file.
+  """
+  with open(filepath, 'r', encoding='utf-8') as f:
+    content = f.read()
+  \# Simple word counting by splitting on whitespace
+  words = content.split()
+  return len(words)
+
+def count_words_in_directory(directory):
+  """Counts the total number of words in all markdown files within a directory.
+
+  Args:
+    directory: Path to the directory containing markdown files.
+
+  Returns:
+    The total word count across all markdown files.
+  """
+  total_words = 0
+  for filename in os.listdir(directory):
+    if filename.endswith(".md"):
+      filepath = os.path.join(directory, filename)
+      total_words += count_words_in_markdown(filepath)
+  return total_words
+
+if __name__ == "__main__":
+  directory_to_search = "PUT THE PATH TO A FOLDER HERE"  \# Replace with your directory
+  total_word_count = count_words_in_directory(directory_to_search)
+  print(f"Total words in markdown files: {total_word_count}")</pre>
+
+    </section>
+  </article>
+
+</body>
+</html>

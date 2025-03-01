@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Avoid Mackup If Running Sonoma or Later</title>
+  <meta name="description" content="A couple of weeks ago I saw a post on r/MacApps for a utility that purported to back up your preferences for a large number of apps, including perennial favorites Keyboard Maestro, Hazel, Bartender, Text...">
+  <style>
+    header{
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <header>
+      <h1>Avoid Mackup If Running Sonoma or Later</h1>
+      <time datetime="2024-08-26T08:59:55Z">August 26, 2024 — 08:59</time>
+    </header>
+    
+    <section>
+      <p><action-text-attachment sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTh6TmpNek56OWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--6b2b608d61eb9e960de1d9a4dde54fe9ced72f88" content-type="image/jpeg" url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdkdOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--79ff0f3294b573c3729896678e6ea92487db070f/mackup.jpg" filename="mackup.jpg" filesize="113225" width="1618" height="1086" previewable="true" presentation="gallery" caption="Mackup">
+<figure class="attachment attachment--preview flex-col justify-center attachment--jpg">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBdkdOIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--79ff0f3294b573c3729896678e6ea92487db070f/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUVHa0NBQXc2Q25OaGRtVnlld2M2Q25OMGNtbHdWRG9NY1hWaGJHbDBlV2xrIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--95bb9764b8481bddaaffec4af57d9e494bae5163/mackup.jpg 2x" loading="lazy" alt="Mackup" src="assets/{:filename=&gt;&quot;mackup.jpg&quot;,%20:new_path=&gt;&quot;images/mackup.jpg&quot;,%20:content_type=&gt;&quot;image/jpeg&quot;,%20:byte_size=&gt;113225,%20:checksum=&gt;&quot;q93uXr2WpCdLz6eX93u/BA==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      Mackup
+    </figcaption>
+</figure></action-text-attachment></p>
+
+<p>A couple of weeks ago I saw <a
+href="https://www.reddit.com/r/macapps/comments/1eu5s9d/is_there_an_app_to_manage_apps_something_that/">a
+post on r/MacApps</a> for a utility that purported to back up your
+preferences for a large number of apps, including perennial favorites
+Keyboard Maestro, Hazel, Bartender, Text Expander and others. The name
+of the utility is Mackup and it is <a
+href="https://github.com/lra/mackup">available on GitHub</a>. Like I
+often do when discovering new apps on this sub, I downloaded and
+installed it. I proceeded to follow the instructions to backup my
+system. And then, I was so hosed. The preferences for many of the apps
+it &quot;backed up&quot; were not only set back to default, they were also set to
+read only so that I could not redo them. Every time I reconfigured an
+app and restarted it, nothing was saved and all the changes I just made
+were gone. In order to get around the problem I had to use App Cleaner
+to uninstall each app and then reinstall and reconfigure it.</p>
+
+<p>I complained bitterly about this on social media, as one does, only to
+find out that other app curious folks had the same experience. Finally
+someone sent me a link to documentation from GitHub of other users
+raising hell over the issue.</p>
+
+<blockquote>This app should be removed from GitHub, or at least its destruction of all app and OS preferences should be clearly indicated as a warning to future users atop the readme.</blockquote>
+
+<p><br /></p>
+
+<blockquote>Um, maybe that should be communicated via the app itself!?!?! I just lost all my configs after doing a backup - I even ran with the dry-run option first to make sure it was going to add what I expected. Rebooted this morning, all preferences are gone and iCloud does not keep backups. Yeah, this is an egregious abuse of user trust.</blockquote>
+
+<p><br /></p>
+
+<blockquote>Yes, mackup does not work correctly in Macos Sonoma, since it doesn't support symlinked files for preferences as it previously. For more information, see <a href="https://github.com/lra/mackup/issues/1924">\#1924</a> and especially <a href="https://github.com/lra/mackup/issues/1924\#issuecomment-2115757100">this comment</a>.</blockquote>
+
+<p><br />To be clear, I accept responsibility for my own actions. I have a
+robust multi-backup system in place. I&#39;m also an experienced user with
+intimate knowledge of my important apps and I was able to get everything
+back to normal in short order, but for anyone without backups or less
+experienced this could have been a real disaster. I thought I&#39;d warn
+folks.</p>
+
+    </section>
+  </article>
+
+</body>
+</html>

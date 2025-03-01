@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Topgrade - Upgrade All the Things</title>
+  <meta name="description" content="One of the more useful Homebrew apps I&#39;ve found is topgrade-rs, the currently maintained fork of topgrade, an updater for Homebrew, the Mac App Store, MacOS, VSCode extensions and Rust. It is supremely easy to...">
+  <style>
+    header{
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <header>
+      <h1>Topgrade - Upgrade All the Things</h1>
+      <time datetime="2024-09-07T08:46:35Z">September 07, 2024 — 08:46</time>
+    </header>
+    
+    <section>
+      <p><action-text-attachment sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTh6TnpRek5UOWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--641c7d1594991c601622fedb4ae31e90c14fd985" content-type="image/jpeg" url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBanVTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a319c3f166628961276d69e5d2749654ce31d939/CleanShot%202024-09-07%20at%2004.35.24%402x.jpg" filename="CleanShot 2024-09-07 at 04.35.24@2x.jpg" filesize="50075" width="672" height="400" previewable="true" presentation="gallery" caption="Topgrade Results">
+<figure class="attachment attachment--preview flex-col justify-center attachment--jpg">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBanVTIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--a319c3f166628961276d69e5d2749654ce31d939/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUVHa0NBQXc2Q25OaGRtVnlld2M2Q25OMGNtbHdWRG9NY1hWaGJHbDBlV2xrIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--95bb9764b8481bddaaffec4af57d9e494bae5163/CleanShot%202024-09-07%20at%2004.35.24@2x.jpg 2x" loading="lazy" alt="Topgrade Results" src="assets/{:filename=&gt;&quot;CleanShot%202024-09-07%20at%2004.35.24@2x.jpg&quot;,%20:new_path=&gt;&quot;images/CleanShot%202024-09-07%20at%2004.35.24@2x.jpg&quot;,%20:content_type=&gt;&quot;image/jpeg&quot;,%20:byte_size=&gt;50075,%20:checksum=&gt;&quot;FcqN/jeYSGgVYwoxa0hxGA==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      Topgrade Results
+    </figcaption>
+</figure></action-text-attachment></p>
+
+<p>One of the more useful Homebrew apps I&#39;ve found is <a
+href="https://github.com/topgrade-rs/topgrade">topgrade-rs</a>, the
+currently maintained fork of topgrade, an updater for Homebrew, the Mac
+App Store, MacOS, VSCode extensions and Rust. It is supremely easy to
+use. Just enter the command</p>
+
+<pre> topgrade </pre>
+
+<p>in Terminal and sit back while it does the upgrades, starting with
+Homebrew, Homebrew formulae and casks. </p>
+
+<p>Next it moves onto the Mac App Store. You can run Mac App Store commands
+separately and there are a few bugs to note there. If the MAS database
+for version number does not match what the app actually has, then the
+app will download and install every time you run </p>
+
+<pre>mas upgrade </pre>
+
+<p>or topgrade. You can also run </p>
+
+<pre>mas list</pre>
+
+<p> to see everything you have downloaded from the MAS, to include a
+separate list of apps that are no longer being maintained, useful if you
+want to remove them from your system.</p>
+
+<p>Next, topgrade checks to see if there are any updates available from
+Apple for macOS. If so, it stops and offers you the yes/no choice to
+install the upgrade.</p>
+
+<p>Finally, it moves to Rust and VSCode extensions.</p>
+
+<p>I find topgrade an easy thing to run frequently. There are no fancy
+commands or switches to remember. Converting as many of my apps as
+possible over to Homebrew casks was easy enough using the GUI Homebrew
+App Store, <a
+href="https://apps.louplummer.lol/post/applite-an-app-store-for-homebrew">Applite</a>
+and now keeping them updated is easy using topgrade. </p>
+
+    </section>
+  </article>
+
+</body>
+</html>

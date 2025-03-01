@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quick Tips for App Installation Using Hazel</title>
+  <meta name="description" content="In this post, I show you how to automate the installation of Mac apps in the two post popular formats ZIP and DMG, so that all you have to do is download a file from...">
+  <style>
+    header{
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <header>
+      <h1>Quick Tips for App Installation Using Hazel</h1>
+      <time datetime="2025-01-17T21:04:35Z">January 17, 2025 — 21:04</time>
+    </header>
+    
+    <section>
+      <p>In this post, I show you how to automate the installation of Mac apps in
+the two post popular formats ZIP and DMG, so that all you have to do is
+download a file from a developer&#39;s website and with no further action
+from you, the app will end up in your Applications folder just like if
+you&#39;d downloaded it from the App Store.</p>
+
+<p>Typically, when you download a Mac app from a developer&#39;s website, it
+will come in one of three formats</p>
+
+<ol>
+<li>ZIP Archive</li>
+<li>DMG Disk Image</li>
+<li>PKG - Package Installer (requires manual installation)</li>
+</ol>
+
+<p>You can automate the installation of ZIP archives and DMG dish images
+with <a
+href="https://amerpie.lol/2024/05/10/my-favorite-actions.html">Hazel</a>
+and a ninety-nine cent app from the Mac App Store.</p>
+
+<h2>DMGs</h2>
+
+<p>The app that works best for me is <a
+href="https://rapidmg.branchseer.com/">RapiDMG</a>. When you make
+RapiDMG your default app for opening disk images, double-clicking on the
+file mounts the disk image files, extracts the application contained in
+it to the Applications folder, deletes the DMG (if that is your
+preference) and then highlights your new installed app in the finder. To
+automate it, create the following rule in Hazel for your downloads
+folder.<action-text-attachment
+sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTgxT1RFME5EOWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--1ba27a7683bb8cc70c1b13cf668d41762566d3c9"
+content-type="image/jpeg"
+url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2puIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4c62f34a278212d6ede0fed397c523ae7ff8cbcd/CleanShot%202025-01-17%20at%2015.50.06%402x.jpg"
+filename="CleanShot 2025-01-17 at 15.50.06@2x.jpg" filesize="55471"
+width="2032" height="512" previewable="true" presentation="gallery"
+caption="RapiDMG" /></p>
+
+<figure class="attachment attachment--preview flex-col justify-center attachment--jpg">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ2puIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--4c62f34a278212d6ede0fed397c523ae7ff8cbcd/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUVHa0NBQXc2Q25OaGRtVnlld2M2Q25OMGNtbHdWRG9NY1hWaGJHbDBlV2xrIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--95bb9764b8481bddaaffec4af57d9e494bae5163/CleanShot%202025-01-17%20at%2015.50.06@2x.jpg 2x" loading="lazy" alt="RapiDMG" src="assets/{:filename=&gt;&quot;CleanShot%202025-01-17%20at%2015.50.06@2x.jpg&quot;,%20:new_path=&gt;&quot;images/CleanShot%202025-01-17%20at%2015.50.06@2x.jpg&quot;,%20:content_type=&gt;&quot;image/jpeg&quot;,%20:byte_size=&gt;55471,%20:checksum=&gt;&quot;k4mJ/DPZ6eoqTyIwRl/Bkg==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      RapiDMG
+    </figcaption>
+</figure>
+
+<p></action-text-attachment>ZIP Archives</p>
+
+<p>You don&#39;t need any additional software to extract and move applications.
+Everything is built into Hazel. You&#39;ll need to add two rules for your
+downloads folder. The first will extract the app from the archive. The
+second rule will move it to the Applications folder.</p>
+
+<div class="attachment-gallery attachment-gallery--2">
+  <action-text-attachment sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTgxT1RFME5UOWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--45a7b39e76f121cd7359f66c7b79678ba2f2e7ab" content-type="image/jpeg" url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ25uIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97407edeb325a53d7a08638fde811833c644daa3/CleanShot%202025-01-17%20at%2015.40.00%402x.jpg" filename="CleanShot 2025-01-17 at 15.40.00@2x.jpg" filesize="60762" width="2030" height="648" previewable="true" presentation="gallery" caption="Unarchive Zip Files">
+<figure class="attachment attachment--preview flex-col justify-center attachment--jpg">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ25uIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--97407edeb325a53d7a08638fde811833c644daa3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUVHa0NBQXc2Q25OaGRtVnlld2M2Q25OMGNtbHdWRG9NY1hWaGJHbDBlV2xrIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--95bb9764b8481bddaaffec4af57d9e494bae5163/CleanShot%202025-01-17%20at%2015.40.00@2x.jpg 2x" loading="lazy" alt="Unarchive Zip Files" src="assets/{:filename=&gt;&quot;CleanShot%202025-01-17%20at%2015.50.06@2x.jpg&quot;,%20:new_path=&gt;&quot;images/CleanShot%202025-01-17%20at%2015.50.06@2x.jpg&quot;,%20:content_type=&gt;&quot;image/jpeg&quot;,%20:byte_size=&gt;55471,%20:checksum=&gt;&quot;k4mJ/DPZ6eoqTyIwRl/Bkg==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      Unarchive Zip Files
+    </figcaption>
+</figure></action-text-attachment><action-text-attachment sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTgxT1RFME56OWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--15060dd82c8347b0b167830fe37379789208d6b7" content-type="image/jpeg" url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3ZuIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf24fa6b9d39a47eda29740057c03194a99e4eba/CleanShot%202025-01-17%20at%2015.40.45%402x.jpg" filename="CleanShot 2025-01-17 at 15.40.45@2x.jpg" filesize="56869" width="2032" height="512" previewable="true" presentation="gallery" caption="Move to Applications">
+<figure class="attachment attachment--preview flex-col justify-center attachment--jpg">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBZ3ZuIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bf24fa6b9d39a47eda29740057c03194a99e4eba/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUVHa0NBQXc2Q25OaGRtVnlld2M2Q25OMGNtbHdWRG9NY1hWaGJHbDBlV2xrIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--95bb9764b8481bddaaffec4af57d9e494bae5163/CleanShot%202025-01-17%20at%2015.40.45@2x.jpg 2x" loading="lazy" alt="Move to Applications" src="assets/{:filename=&gt;&quot;CleanShot%202025-01-17%20at%2015.50.06@2x.jpg&quot;,%20:new_path=&gt;&quot;images/CleanShot%202025-01-17%20at%2015.50.06@2x.jpg&quot;,%20:content_type=&gt;&quot;image/jpeg&quot;,%20:byte_size=&gt;55471,%20:checksum=&gt;&quot;k4mJ/DPZ6eoqTyIwRl/Bkg==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      Move to Applications
+    </figcaption>
+</figure></action-text-attachment>
+
+
+
+
+<br />
+
+
+</div>
+
+    </section>
+  </article>
+
+</body>
+</html>

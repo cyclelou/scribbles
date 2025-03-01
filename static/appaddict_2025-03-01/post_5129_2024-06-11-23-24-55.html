@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Open Core Legacy Patcher</title>
+  <meta name="description" content="
+OpenCore Legacy Patcher is a free and open-source tool designed for individuals who want to run newer versions of macOS on older, unsupported hardware. It achieves this by patching macOS and modifying it to work...">
+  <style>
+    header{
+      margin-bottom: 1em;
+    }
+  </style>
+</head>
+<body>
+
+  <article>
+    <header>
+      <h1>Open Core Legacy Patcher</h1>
+      <time datetime="2024-06-12T08:00:00Z">June 12, 2024 — 08:00</time>
+    </header>
+    
+    <section>
+      <p><action-text-attachment sgid="eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaEpJamxuYVdRNkx5OXpZM0pwWW1Kc1pYTXZRV04wYVhabFUzUnZjbUZuWlRvNlFteHZZaTh5T0RRek16OWxlSEJwY21WelgybHVCam9HUlZRPSIsImV4cCI6bnVsbCwicHVyIjoiYXR0YWNoYWJsZSJ9fQ==--87c15e1a51c7b8ad59eea5c6b9f3612f134b6622" content-type="image/png" url="https://scribbles.page/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEZ2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9c6d263160aa83364bc262cca7052d808664f7e8/OCLP-GUI-Main-Menu.40fc1dad.png" filename="OCLP-GUI-Main-Menu.40fc1dad.png" filesize="399235" width="1424" height="886" previewable="true" presentation="gallery" caption="OCLP GUI">
+<figure class="attachment attachment--preview flex-col justify-center attachment--png">
+      <img class="lightbox--image" srcset="https://scribbles.page/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaEZ2IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--9c6d263160aa83364bc262cca7052d808664f7e8/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdDRG9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RkhKbGMybDZaVjkwYjE5c2FXMXBkRnNIYVFJQUVHa0NBQXc2Q25OaGRtVnlld2M2Q25OMGNtbHdWRG9NY1hWaGJHbDBlV2xrIiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--a18847b6c1cccf2736612f487841b9c550593dc1/OCLP-GUI-Main-Menu.40fc1dad.png 2x" loading="lazy" alt="OCLP GUI" src="assets/{:filename=&gt;&quot;OCLP-GUI-Main-Menu.40fc1dad.png&quot;,%20:new_path=&gt;&quot;images/OCLP-GUI-Main-Menu.40fc1dad.png&quot;,%20:content_type=&gt;&quot;image/png&quot;,%20:byte_size=&gt;399235,%20:checksum=&gt;&quot;QPwdrR4OBzPEdiWKZuBN7w==&quot;,%20:type=&gt;&quot;image&quot;}" />
+    <figcaption class="attachment__caption text-center">
+      OCLP GUI
+    </figcaption>
+</figure></action-text-attachment></p>
+
+<p><br /><a
+href="https://dortania.github.io/OpenCore-Legacy-Patcher/">OpenCore
+Legacy Patcher</a> is a free and open-source tool designed for
+individuals who want to run newer versions of macOS on older,
+unsupported hardware. It achieves this by patching macOS and modifying
+it to work with these older models. It is based on OpenCore, a modern
+and versatile bootloader for macOS. This is what the developers have to
+say about compatibility with the Sequoia beta: &quot;I am going to say this
+preemptively:</p>
+
+<ul>
+<li>No, OCLP does not support macOS 15 yet</li>
+<li>No, I don't even know if it still supports Intel yet</li>
+<li>﻿﻿No, there are no ETAs</li>
+<li>No, please do not install it on release and then complain that it doesn't work</li>
+</ul>
+
+<p>No ETAs for Sequoia support. Don&#39;t ask, don&#39;t try installing it. If you
+try installing it, we won&#39;t help you.&quot;  <br />Source: <a
+href="https://www.youtube.com/watch?v=BpSQlC9u4sE">OCLP macOS Sequoia
+Beta Status Update &amp; WARNING!!! (youtube.com)</a></p>
+
+<p>Having established that, if you aren&#39;t familiar with OCLP and you have
+an older Mac you&#39;d like to upgrade past its supported version of macOS,
+you are in luck. I recently had to turn in my 2023 M2 MacBook Air for
+AppleCare support and was left with a 2014 MBP as a backup. It only had
+the latest OS it would officially support on it and when I tried to
+install a few of my most used programs, I got shut down because things
+like Raycast and DropOver didn&#39;t work. Luckily, OCLP exists and I was
+able to get past the constraints imposed by Apple.</p>
+
+<p>Here&#39;s how it works:</p>
+
+<ol>
+<li> The first step of ensuring whether your model is supported is by
+checking the <a
+href="https://dortania.github.io/OpenCore-Legacy-Patcher/MODELS.html">Supported
+Models</a> page.<br />2. <a
+href="https://dortania.github.io/OpenCore-Legacy-Patcher/INSTALLER.html">Download
+and build macOS Installer</a><br />3. <a
+href="https://dortania.github.io/OpenCore-Legacy-Patcher/BUILD.html">Run
+the OpenCore-Patcher.app</a><br />4. <a
+href="https://dortania.github.io/OpenCore-Legacy-Patcher/BOOT.html">Reboot
+and boot OpenCore</a></li>
+</ol>
+
+<p>Once you&#39;ve installed macOS through OpenCore, you can boot up and go
+through the regular install process. To boot without the USB drive
+plugged in is quite simple:</p>
+
+<ul>
+<li>Download OpenCore Legacy Patcher<br />* Change Patcher settings as
+you&#39;d like<br />* Build OpenCore again<br />* Install OpenCore to
+internal drive<br />* Reboot holding Option, and select the internal
+EFI</li>
+</ul>
+
+<p>And voila! No more USB drive required.</p>
+
+    </section>
+  </article>
+
+</body>
+</html>
